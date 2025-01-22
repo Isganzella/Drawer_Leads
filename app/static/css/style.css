@@ -1,0 +1,45 @@
+
+
+:root{
+    --bg-color: #878ceb;
+    --bg-color-inner: #FBFAFF;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+#app{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    min-height:  100vh;
+}
+
+main .inner{
+    height: 100%;
+    background-color: var(--bg-color-inner);
+    border-top-left-radius: 32px;
+}
+
+main{
+    padding-top: 0.8rem;
+}
+
+nav{
+    padding: 3.2rem 2.7rem 0 3.5rem;
+    min-width: 11.5rem;
+}
+
+ul{
+    margin-top: 6rem;
+    display: grid;
+    gap: 3.6rem;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--bg-color-inner);
+}

@@ -4,6 +4,7 @@
     --bg-color: #878ceb;
     --bg-color-inner: #FBFAFF;
     --color-fonts: #403937;
+    --color-placeholder: #7c7c8a;
 }
 
 body{
@@ -128,5 +129,78 @@ section.filter{
 .input-wrapper input{
     border: none;
     width: 100%;
-    padding: 1rem 0;
+    outline: none;
+}
+
+.input-wrapper:has(:focus){
+    outline: .2rem black solid;
+}
+
+.input-wrapper input::placeholder{
+    font-size: 1.6rem;
+    color: var(--color-placeholder);
+}
+
+section.kanbam{
+    display: flex;
+    gap: 4.8rem;
+    padding-top: 3.2rem;
+}
+
+section.kanbam > *{
+    flex: 1;
+    padding: 2.4rem;
+}
+
+section.kanbam h2{
+    font-size: 2rem;
+    color: var(--color-fonts);
+    padding: 2.4rem 0;
+}
+
+.kanbam .todo{
+    background-color: #fff;
+    box-shadow: .0rem .4rem 1.6rem #eae2fd;
+    border-radius: 0.8rem;
+}
+
+.card{
+    padding: 2.4rem;
+    background-color: #fff;
+    box-shadow: .0rem .4rem 1.6rem #eae2fd;
+    border-radius: 0.8rem;
+    line-height: 130%;
+}
+
+.card h3{
+    font-size: 1.4rem;
+    color: var(--color-fonts);
+}
+
+.card p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #756966;
+}
+
+.card .tags{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: #7c3aed;
+}
+
+.card .tags span{
+    font-size: 1.4rem;
+    line-height: 130%;
+    background-color: #e2d6ff;
+    border-radius: 0.8rem;
+    padding: .4rem .8rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
 }
